@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.experian.bis.api.lib</groupId>
+	<artifactId>bis-services-lib</artifactId>
+	<version>1.0.1</version>
+	<name>BIS Services</name>
+	<packaging>pom</packaging>
+	<description>Combined Library For All Experian BIS Services</description>
+	<modules>
+		<module>bis-businessservices-lib</module>
+		<module>bis-services-base</module>
+	</modules>
+</project>
