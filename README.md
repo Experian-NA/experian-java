@@ -249,9 +249,10 @@ public SocialMediaAttributesResponse getSMIAttributesSampleResponse(){
 	request.setCity("Cupertino");
 	request.setState("CA");
 	request.setSubcode("0563736");
+	SocialMediaAttributesResponse response = null;
 	try {
 		@SuppressWarnings("unused")
-		SocialMediaAttributesResponse response = (SocialMediaAttributesResponse) service.execute(request);
+		response = (SocialMediaAttributesResponse) service.execute(request);
 	}
 	catch(BISValidationException vex) {
 		//Custom validation for invalid data
@@ -261,6 +262,7 @@ public SocialMediaAttributesResponse getSMIAttributesSampleResponse(){
 		//Custom validation for service error
 		System.out.println((new ObjectMapper()).writeValueAsString(ex.getServiceError()));
 	}
+	return response;
 }
 ```
 
